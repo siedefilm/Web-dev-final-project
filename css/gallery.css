@@ -1,0 +1,209 @@
+*
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family:"Agency FB", sans-serif;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+body
+{
+	background: var(--white);
+	color: #777;
+	margin: 0 auto;
+	padding: 50px;
+	padding-left: 20px;
+	position: relative;
+	width: 100%;
+	align-items: center;
+}
+
+h1
+{
+	background: inherit;
+	border-bottom: 2px dashed #000000;
+	color: #000000;
+	font: 4rem "Agency FB", sans-serif;
+	margin: 0 0 10px;
+	padding: 0 0 5px;
+	text-align: center;
+}
+
+p
+{
+	clear: both;
+	font: 10px Verdana, sans-serif;
+	padding: 10px 0;
+	text-align: center;
+}
+
+p a
+{
+	background: inherit;
+	color: #777;
+}
+
+p a:hover
+{
+	background: inherit;
+	color: #000;
+}
+
+
+
+.hoverbox
+{
+	cursor: default;
+	list-style: none;
+}
+
+.hoverbox a
+{
+	cursor: default;
+}
+
+.hoverbox a .preview
+{
+	display: none;
+}
+
+.hoverbox a:hover .preview
+{
+	display: block;
+	position: absolute;
+	top: -33px;
+	left: -45px;
+	z-index: 1;
+}
+
+.hoverbox img
+{
+	background: #f8f8ff;
+	border-color: #aaa #ccc #ddd #bbb;
+	border-style: solid;
+	border-width: 1px;
+	color: inherit;
+	padding: 2px;
+	vertical-align: top;
+	width: 200px;
+	height: 150px;
+}
+
+.hoverbox li
+{
+	background: #eee;
+	border-color: #ddd #bbb #aaa #ccc;
+	border-style: solid;
+	border-width: 1px;
+	color: inherit;
+	display: inline;
+	float: left;
+	margin: 3px;
+	padding: 5px;
+	position: relative;
+}
+
+.hoverbox .preview
+{
+	border-color: var(--dusk);
+	width: 400px;
+	height: 300px;
+}
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Agency FB", sans-serif;
+  font-size: 4rem;
+}
+
+body2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin: 20px;
+  background-color: var(--dusk);
+  padding: 0.5rem 1.5rem;
+  font-size: 4rem;
+  font-color: var(--black);
+  outline: none;
+  border: none;
+  border-radius: 1.2rem 1.1rem 1.1rem 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.btn:hover {
+  transform:translateY( -6px);
+  box-shadow: 0 6px 6px #00000040;
+
+}
+
+:root {
+  --black: #000000;
+  --white: #f8f8ff;
+  --dusk: #a9a8b8;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
+	margin: 0;
+}
+
+.col-1 {
+	background: #d2bdde;
+	flex: 1;
+}
+
+.col-2 {
+	display: flex;
+	flex-direction: column;
+	flex: 5;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+	.content > article {
+		flex: 4;
+		min-height: 60vh;
+	}
+
+header, footer {
+	background: #a9a8b8;
+	height: 20vh;
+	width: 100%;
+}
+
+header, footer, article, nav {
+	padding: 1em;
+}
+nav {
+	height:100%;
+}
